@@ -27,9 +27,7 @@ public class ContentAction implements CommandAction {
              Class.forName(driverName); 
             Connection con = DriverManager.getConnection(url,"jspexam","jsppw");
  
-            System.out.println("Oracle Database Connection Success.");
- 
-            Statement stmt = con.createStatement();
+                Statement stmt = con.createStatement();
  
             String sql = "select * from bbstable where idx = " + idx ;
  
