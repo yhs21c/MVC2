@@ -53,6 +53,8 @@ public class ContentAction implements CommandAction {
                 article.setContent(rs.getString("content"));
  
                 article.setRegdate(rs.getString("regdate"));
+                
+                article.setRegip(rs.getString("regip"));
  
                 article.setCount(Integer.parseInt(rs.getString("count")));
  

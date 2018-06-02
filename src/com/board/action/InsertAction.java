@@ -19,6 +19,7 @@ public class InsertAction implements CommandAction {
         String writer = request.getParameter("writer");
         String regdate = request.getParameter("regdate");
         String content = request.getParameter("content");
+        String regip = request.getRemoteAddr();
        
         try {
  
@@ -31,9 +32,9 @@ public class InsertAction implements CommandAction {
  
             String sql = "INSERT INTO BBSTABLE "+
                     
-                       "(TITLE, WRITER, REGDATE, COUNT, CONTENT) "+
+                       "(TITLE, WRITER, REGDATE, COUNT, CONTENT, REGIP) "+
         
-                       "VALUES ('"+title+"', '"+writer+"', '"+regdate+"', '1', '"+content+"')";
+                       "VALUES ('"+title+"', '"+writer+"', '"+regdate+"', '1', '"+content+"', '"+regip+"')";
         
        stmt.executeUpdate(sql); 
  

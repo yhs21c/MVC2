@@ -34,6 +34,9 @@
             <th>작성자</th>
  
             <td>${article.writer}</td>
+            <th>ip</th>
+ 
+            <td>${article.regip}</td>
  
             <th>날짜</th>
  

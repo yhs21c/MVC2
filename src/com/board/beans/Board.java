@@ -43,5 +43,12 @@ private String writer;
 private String regdate;
 private int count;
 private String content;
+private String regip;
+public String getRegip() {
+	return regip;
+}
+public void setRegip(String regip) {
+	this.regip = regip;
+}
 
 }
